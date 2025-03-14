@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_50f605bf2d35105b4eb844d894ad5268 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_50f605bf2d35105b4eb844d894ad5268" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_50f605bf2d35105b4eb844d894ad5268 = L.map(
+                "map_50f605bf2d35105b4eb844d894ad5268",
+                {
+                    center: [53.57532, 10.01534],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f0cfd7d4544440fd033f85a3b4b93a13 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f0cfd7d4544440fd033f85a3b4b93a13.addTo(map_50f605bf2d35105b4eb844d894ad5268);
+        
+    
+            var marker_cluster_4cc31ae82380525d77997575f935abc6 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_c76fe7015d87e4ed49a3710de5d80817 = L.marker(
+                [53.0758196, 8.8071646],
+                {
+}
+            ).addTo(marker_cluster_4cc31ae82380525d77997575f935abc6);
+        
+    
+            var div_icon_fc1c80686b4240a7187ab9bb23c4acf4 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: blue;\n                    color: white;\n                    border-radius: 50%;\n                    width: 30px;\n                    height: 30px;\n                    text-align: center;\n                    line-height: 30px;\n                    font-weight: bold;\n                    border: 2px solid black;\"\u003e\n                    39\n                \u003c/div\u003e",
+  "className": "empty",
+});
+            marker_c76fe7015d87e4ed49a3710de5d80817.setIcon(div_icon_fc1c80686b4240a7187ab9bb23c4acf4);
+        
+    
+        var popup_20c949ffc45fce25bc284754886b3ad8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77076a9ed6de9b142fe361dd4031d37d = $(`<div id="html_77076a9ed6de9b142fe361dd4031d37d" style="width: 100.0%; height: 100.0%;">Bremen: Durchschnittsalter 39.1 Jahre</div>`)[0];
+                popup_20c949ffc45fce25bc284754886b3ad8.setContent(html_77076a9ed6de9b142fe361dd4031d37d);
+            
+        
+
+        marker_c76fe7015d87e4ed49a3710de5d80817.bindPopup(popup_20c949ffc45fce25bc284754886b3ad8)
+        ;
+
+        
+    
+    
+            marker_c76fe7015d87e4ed49a3710de5d80817.bindTooltip(
+                `<div>
+                     Bremen
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c76fe7015d87e4ed49a3710de5d80817.setIcon(div_icon_fc1c80686b4240a7187ab9bb23c4acf4);
+            
+    
+            var marker_022c02aed1b895be5bf219e8d2e9f32e = L.marker(
+                [53.5505392, 8.5851945],
+                {
+}
+            ).addTo(marker_cluster_4cc31ae82380525d77997575f935abc6);
+        
+    
+            var div_icon_f31aad60874089debee85139988356e3 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: lightblue;\n                    color: white;\n                    border-radius: 50%;\n                    width: 30px;\n                    height: 30px;\n                    text-align: center;\n                    line-height: 30px;\n                    font-weight: bold;\n                    border: 2px solid black;\"\u003e\n                    44\n                \u003c/div\u003e",
+  "className": "empty",
+});
+            marker_022c02aed1b895be5bf219e8d2e9f32e.setIcon(div_icon_f31aad60874089debee85139988356e3);
+        
+    
+        var popup_2d5f7b96668f0112923038362254d311 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_753522feb12e5992e14363aceb1ca169 = $(`<div id="html_753522feb12e5992e14363aceb1ca169" style="width: 100.0%; height: 100.0%;">Bremerhaven: Durchschnittsalter 43.8 Jahre</div>`)[0];
+                popup_2d5f7b96668f0112923038362254d311.setContent(html_753522feb12e5992e14363aceb1ca169);
+            
+        
+
+        marker_022c02aed1b895be5bf219e8d2e9f32e.bindPopup(popup_2d5f7b96668f0112923038362254d311)
+        ;
+
+        
+    
+    
+            marker_022c02aed1b895be5bf219e8d2e9f32e.bindTooltip(
+                `<div>
+                     Bremerhaven
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_022c02aed1b895be5bf219e8d2e9f32e.setIcon(div_icon_f31aad60874089debee85139988356e3);
+            
+    
+            var marker_3462ad17746d9905960887c4de73f9be = L.marker(
+                [53.86878, 8.698286],
+                {
+}
+            ).addTo(marker_cluster_4cc31ae82380525d77997575f935abc6);
+        
+    
+            var div_icon_7e0aba4a81c1b9e35b98e32594d49e0c = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: lightblue;\n                    color: white;\n                    border-radius: 50%;\n                    width: 30px;\n                    height: 30px;\n                    text-align: center;\n                    line-height: 30px;\n                    font-weight: bold;\n                    border: 2px solid black;\"\u003e\n                    40\n                \u003c/div\u003e",
+  "className": "empty",
+});
+            marker_3462ad17746d9905960887c4de73f9be.setIcon(div_icon_7e0aba4a81c1b9e35b98e32594d49e0c);
+        
+    
+        var popup_78331a9d4e9250655c42de56fe1add56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87c7da1d9f52b10238a99e904ec3a5f2 = $(`<div id="html_87c7da1d9f52b10238a99e904ec3a5f2" style="width: 100.0%; height: 100.0%;">Cuxhaven: Durchschnittsalter 40.4 Jahre</div>`)[0];
+                popup_78331a9d4e9250655c42de56fe1add56.setContent(html_87c7da1d9f52b10238a99e904ec3a5f2);
+            
+        
+
+        marker_3462ad17746d9905960887c4de73f9be.bindPopup(popup_78331a9d4e9250655c42de56fe1add56)
+        ;
+
+        
+    
+    
+            marker_3462ad17746d9905960887c4de73f9be.bindTooltip(
+                `<div>
+                     Cuxhaven
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3462ad17746d9905960887c4de73f9be.setIcon(div_icon_7e0aba4a81c1b9e35b98e32594d49e0c);
+            
+    
+            var marker_f4eded1ed9bcfbff9ad45c711f3629d6 = L.marker(
+                [53.3670541, 7.2058304],
+                {
+}
+            ).addTo(marker_cluster_4cc31ae82380525d77997575f935abc6);
+        
+    
+            var div_icon_b874b3242a99ca9802f973a411bfeaa8 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: lightblue;\n                    color: white;\n                    border-radius: 50%;\n                    width: 30px;\n                    height: 30px;\n                    text-align: center;\n                    line-height: 30px;\n                    font-weight: bold;\n                    border: 2px solid black;\"\u003e\n                    45\n                \u003c/div\u003e",
+  "className": "empty",
+});
+            marker_f4eded1ed9bcfbff9ad45c711f3629d6.setIcon(div_icon_b874b3242a99ca9802f973a411bfeaa8);
+        
+    
+        var popup_a3fef91db44962d082ec82ded9be7e6b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7986f2f3f87c049f222a7d011ae500bb = $(`<div id="html_7986f2f3f87c049f222a7d011ae500bb" style="width: 100.0%; height: 100.0%;">Emden: Durchschnittsalter 44.5 Jahre</div>`)[0];
+                popup_a3fef91db44962d082ec82ded9be7e6b.setContent(html_7986f2f3f87c049f222a7d011ae500bb);
+            
+        
+
+        marker_f4eded1ed9bcfbff9ad45c711f3629d6.bindPopup(popup_a3fef91db44962d082ec82ded9be7e6b)
+        ;
+
+        
+    
+    
+            marker_f4eded1ed9bcfbff9ad45c711f3629d6.bindTooltip(
+                `<div>
+                     Emden
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f4eded1ed9bcfbff9ad45c711f3629d6.setIcon(div_icon_b874b3242a99ca9802f973a411bfeaa8);
+            
+    
+            var marker_d094e988eca61e04e70d69b6dc0e6c94 = L.marker(
+                [54.7833021, 9.4333264],
+                {
+}
+            ).addTo(marker_cluster_4cc31ae82380525d77997575f935abc6);
+        
+    
+            var div_icon_314caffe09c0a54b2eafb4d35dbe3a85 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: lightblue;\n                    color: white;\n                    border-radius: 50%;\n                    width: 30px;\n                    height: 30px;\n                    text-align: center;\n                    line-height: 30px;\n                    font-weight: bold;\n                    border: 2px solid black;\"\u003e\n                    44\n                \u003c/div\u003e",
+  "className": "empty",
+});
+            marker_d094e988eca61e04e70d69b6dc0e6c94.setIcon(div_icon_314caffe09c0a54b2eafb4d35dbe3a85);
+        
+    
+        var popup_e55281dd237746e038ca3e3ef6242514 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4a04f0784b721884abbf2e5b9f2f3b80 = $(`<div id="html_4a04f0784b721884abbf2e5b9f2f3b80" style="width: 100.0%; height: 100.0%;">Flensburg: Durchschnittsalter 43.8 Jahre</div>`)[0];
+                popup_e55281dd237746e038ca3e3ef6242514.setContent(html_4a04f0784b721884abbf2e5b9f2f3b80);
+            
+        
+
+        marker_d094e988eca61e04e70d69b6dc0e6c94.bindPopup(popup_e55281dd237746e038ca3e3ef6242514)
+        ;
+
+        
+    
+    
+            marker_d094e988eca61e04e70d69b6dc0e6c94.bindTooltip(
+                `<div>
+                     Flensburg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d094e988eca61e04e70d69b6dc0e6c94.setIcon(div_icon_314caffe09c0a54b2eafb4d35dbe3a85);
+            
+    
+            var marker_f20f28b40d9635188323a4a06bdc65ad = L.marker(
+                [54.095791, 13.3815238],
+                {
+}
+            ).addTo(marker_cluster_4cc31ae82380525d77997575f935abc6);
+        
+    
+            var div_icon_72b5a4212aba8ac1da283cd6af89500a = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: blue;\n                    color: white;\n                    border-radius: 50%;\n                    width: 30px;\n                    height: 30px;\n                    text-align: center;\n                    line-height: 30px;\n                    font-weight: bold;\n                    border: 2px solid black;\"\u003e\n                    38\n                \u003c/div\u003e",
+  "className": "empty",
+});
+            marker_f20f28b40d9635188323a4a06bdc65ad.setIcon(div_icon_72b5a4212aba8ac1da283cd6af89500a);
+        
+    
+        var popup_81398666e2552a991084dcf7b0f103d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_32298ab4608e9fb77f7ddc6e220a5866 = $(`<div id="html_32298ab4608e9fb77f7ddc6e220a5866" style="width: 100.0%; height: 100.0%;">Greifswald: Durchschnittsalter 38.4 Jahre</div>`)[0];
+                popup_81398666e2552a991084dcf7b0f103d4.setContent(html_32298ab4608e9fb77f7ddc6e220a5866);
+            
+        
+
+        marker_f20f28b40d9635188323a4a06bdc65ad.bindPopup(popup_81398666e2552a991084dcf7b0f103d4)
+        ;
+
+        
+    
+    
+            marker_f20f28b40d9635188323a4a06bdc65ad.bindTooltip(
+                `<div>
+                     Greifswald
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f20f28b40d9635188323a4a06bdc65ad.setIcon(div_icon_72b5a4212aba8ac1da283cd6af89500a);
+            
+    
+            var marker_7dfdcc7c06c89bfe183e514e211284e3 = L.marker(
+                [53.550341, 10.000654],
+                {
+}
+            ).addTo(marker_cluster_4cc31ae82380525d77997575f935abc6);
+        
+    
+            var div_icon_509397e84328a8b7dc77dd938f4ea18d = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: lightblue;\n                    color: white;\n                    border-radius: 50%;\n                    width: 30px;\n                    height: 30px;\n                    text-align: center;\n                    line-height: 30px;\n                    font-weight: bold;\n                    border: 2px solid black;\"\u003e\n                    43\n                \u003c/div\u003e",
+  "className": "empty",
+});
+            marker_7dfdcc7c06c89bfe183e514e211284e3.setIcon(div_icon_509397e84328a8b7dc77dd938f4ea18d);
+        
+    
+        var popup_fdda2b4d31f2d7407fcf5c7bffb9e85b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78af6b0c0952423edee7c67257951cc4 = $(`<div id="html_78af6b0c0952423edee7c67257951cc4" style="width: 100.0%; height: 100.0%;">Hamburg: Durchschnittsalter 42.8 Jahre</div>`)[0];
+                popup_fdda2b4d31f2d7407fcf5c7bffb9e85b.setContent(html_78af6b0c0952423edee7c67257951cc4);
+            
+        
+
+        marker_7dfdcc7c06c89bfe183e514e211284e3.bindPopup(popup_fdda2b4d31f2d7407fcf5c7bffb9e85b)
+        ;
+
+        
+    
+    
+            marker_7dfdcc7c06c89bfe183e514e211284e3.bindTooltip(
+                `<div>
+                     Hamburg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7dfdcc7c06c89bfe183e514e211284e3.setIcon(div_icon_509397e84328a8b7dc77dd938f4ea18d);
+            
+    
+            var marker_afe3d2c454b1f887206fe28a46c55026 = L.marker(
+                [54.1820608, 7.8876314],
+                {
+}
+            ).addTo(marker_cluster_4cc31ae82380525d77997575f935abc6);
+        
+    
+            var div_icon_2556268b01da4773e08c81023ec08e08 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: lightblue;\n                    color: white;\n                    border-radius: 50%;\n                    width: 30px;\n                    height: 30px;\n                    text-align: center;\n                    line-height: 30px;\n                    font-weight: bold;\n                    border: 2px solid black;\"\u003e\n                    44\n                \u003c/div\u003e",
+  "className": "empty",
+});
+            marker_afe3d2c454b1f887206fe28a46c55026.setIcon(div_icon_2556268b01da4773e08c81023ec08e08);
+        
+    
+        var popup_f33ad4581850f70cb401e670ede592f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf81b2b000b0bd0e3736fe1713287409 = $(`<div id="html_cf81b2b000b0bd0e3736fe1713287409" style="width: 100.0%; height: 100.0%;">Helgoland: Durchschnittsalter 43.6 Jahre</div>`)[0];
+                popup_f33ad4581850f70cb401e670ede592f2.setContent(html_cf81b2b000b0bd0e3736fe1713287409);
+            
+        
+
+        marker_afe3d2c454b1f887206fe28a46c55026.bindPopup(popup_f33ad4581850f70cb401e670ede592f2)
+        ;
+
+        
+    
+    
+            marker_afe3d2c454b1f887206fe28a46c55026.bindTooltip(
+                `<div>
+                     Helgoland
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_afe3d2c454b1f887206fe28a46c55026.setIcon(div_icon_2556268b01da4773e08c81023ec08e08);
+            
+    
+            var marker_1a39db57cd1ed250baf0c441749877bd = L.marker(
+                [54.3227085, 10.135555],
+                {
+}
+            ).addTo(marker_cluster_4cc31ae82380525d77997575f935abc6);
+        
+    
+            var div_icon_6f7d72d5251046c885410f2e0f325442 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: lightblue;\n                    color: white;\n                    border-radius: 50%;\n                    width: 30px;\n                    height: 30px;\n                    text-align: center;\n                    line-height: 30px;\n                    font-weight: bold;\n                    border: 2px solid black;\"\u003e\n                    41\n                \u003c/div\u003e",
+  "className": "empty",
+});
+            marker_1a39db57cd1ed250baf0c441749877bd.setIcon(div_icon_6f7d72d5251046c885410f2e0f325442);
+        
+    
+        var popup_245d68f9f6af29af590f9f6a182f708d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51a3b22a896d4a1f6b43dcf1049646ed = $(`<div id="html_51a3b22a896d4a1f6b43dcf1049646ed" style="width: 100.0%; height: 100.0%;">Kiel: Durchschnittsalter 41.4 Jahre</div>`)[0];
+                popup_245d68f9f6af29af590f9f6a182f708d.setContent(html_51a3b22a896d4a1f6b43dcf1049646ed);
+            
+        
+
+        marker_1a39db57cd1ed250baf0c441749877bd.bindPopup(popup_245d68f9f6af29af590f9f6a182f708d)
+        ;
+
+        
+    
+    
+            marker_1a39db57cd1ed250baf0c441749877bd.bindTooltip(
+                `<div>
+                     Kiel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1a39db57cd1ed250baf0c441749877bd.setIcon(div_icon_6f7d72d5251046c885410f2e0f325442);
+            
+    
+            var marker_e584b06400da2057eb0684de9c2ee15d = L.marker(
+                [53.866444, 10.684738],
+                {
+}
+            ).addTo(marker_cluster_4cc31ae82380525d77997575f935abc6);
+        
+    
+            var div_icon_c6d826698ad9d45374e4d868d56170f7 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: lightblue;\n                    color: white;\n                    border-radius: 50%;\n                    width: 30px;\n                    height: 30px;\n                    text-align: center;\n                    line-height: 30px;\n                    font-weight: bold;\n                    border: 2px solid black;\"\u003e\n                    40\n                \u003c/div\u003e",
+  "className": "empty",
+});
+            marker_e584b06400da2057eb0684de9c2ee15d.setIcon(div_icon_c6d826698ad9d45374e4d868d56170f7);
+        
+    
+        var popup_96214bf35c4932df6760b6cea2dc3a8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_041d965f5988e0d3dafb6f8b28dbbbec = $(`<div id="html_041d965f5988e0d3dafb6f8b28dbbbec" style="width: 100.0%; height: 100.0%;">Lübeck: Durchschnittsalter 40.3 Jahre</div>`)[0];
+                popup_96214bf35c4932df6760b6cea2dc3a8d.setContent(html_041d965f5988e0d3dafb6f8b28dbbbec);
+            
+        
+
+        marker_e584b06400da2057eb0684de9c2ee15d.bindPopup(popup_96214bf35c4932df6760b6cea2dc3a8d)
+        ;
+
+        
+    
+    
+            marker_e584b06400da2057eb0684de9c2ee15d.bindTooltip(
+                `<div>
+                     Lübeck
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e584b06400da2057eb0684de9c2ee15d.setIcon(div_icon_c6d826698ad9d45374e4d868d56170f7);
+            
+    
+            var marker_275e81fb9d9272c9a572a6081ebf8a2d = L.marker(
+                [54.2176341, 8.9001752],
+                {
+}
+            ).addTo(marker_cluster_4cc31ae82380525d77997575f935abc6);
+        
+    
+            var div_icon_c28723ba9835bd4d9f54501da9e3eac9 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: lightblue;\n                    color: white;\n                    border-radius: 50%;\n                    width: 30px;\n                    height: 30px;\n                    text-align: center;\n                    line-height: 30px;\n                    font-weight: bold;\n                    border: 2px solid black;\"\u003e\n                    45\n                \u003c/div\u003e",
+  "className": "empty",
+});
+            marker_275e81fb9d9272c9a572a6081ebf8a2d.setIcon(div_icon_c28723ba9835bd4d9f54501da9e3eac9);
+        
+    
+        var popup_3ac6ad5e46990563011e799f55401349 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8f50cedf8b1cd832c5910e82ac9dc27 = $(`<div id="html_a8f50cedf8b1cd832c5910e82ac9dc27" style="width: 100.0%; height: 100.0%;">Norddeich: Durchschnittsalter 45.1 Jahre</div>`)[0];
+                popup_3ac6ad5e46990563011e799f55401349.setContent(html_a8f50cedf8b1cd832c5910e82ac9dc27);
+            
+        
+
+        marker_275e81fb9d9272c9a572a6081ebf8a2d.bindPopup(popup_3ac6ad5e46990563011e799f55401349)
+        ;
+
+        
+    
+    
+            marker_275e81fb9d9272c9a572a6081ebf8a2d.bindTooltip(
+                `<div>
+                     Norddeich
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_275e81fb9d9272c9a572a6081ebf8a2d.setIcon(div_icon_c28723ba9835bd4d9f54501da9e3eac9);
+            
+    
+            var marker_883187034992bf2482c91182bdf3d979 = L.marker(
+                [53.7056126, 7.1438175],
+                {
+}
+            ).addTo(marker_cluster_4cc31ae82380525d77997575f935abc6);
+        
+    
+            var div_icon_5013c3aef39216275b964e51acf19947 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: lightblue;\n                    color: white;\n                    border-radius: 50%;\n                    width: 30px;\n                    height: 30px;\n                    text-align: center;\n                    line-height: 30px;\n                    font-weight: bold;\n                    border: 2px solid black;\"\u003e\n                    42\n                \u003c/div\u003e",
+  "className": "empty",
+});
+            marker_883187034992bf2482c91182bdf3d979.setIcon(div_icon_5013c3aef39216275b964e51acf19947);
+        
+    
+        var popup_4a8ca7fc737a5ee8a0946ec870d0e3cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4dbc7aa4751b2c0cac7c1033d8f1a288 = $(`<div id="html_4dbc7aa4751b2c0cac7c1033d8f1a288" style="width: 100.0%; height: 100.0%;">Norderney: Durchschnittsalter 41.7 Jahre</div>`)[0];
+                popup_4a8ca7fc737a5ee8a0946ec870d0e3cc.setContent(html_4dbc7aa4751b2c0cac7c1033d8f1a288);
+            
+        
+
+        marker_883187034992bf2482c91182bdf3d979.bindPopup(popup_4a8ca7fc737a5ee8a0946ec870d0e3cc)
+        ;
+
+        
+    
+    
+            marker_883187034992bf2482c91182bdf3d979.bindTooltip(
+                `<div>
+                     Norderney
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_883187034992bf2482c91182bdf3d979.setIcon(div_icon_5013c3aef39216275b964e51acf19947);
+            
+    
+            var marker_062b719a91b92b46d368ec2d21f888da = L.marker(
+                [53.0822606, 7.3928398],
+                {
+}
+            ).addTo(marker_cluster_4cc31ae82380525d77997575f935abc6);
+        
+    
+            var div_icon_7af779ca8920da16eac16ed77cd916a4 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: lightblue;\n                    color: white;\n                    border-radius: 50%;\n                    width: 30px;\n                    height: 30px;\n                    text-align: center;\n                    line-height: 30px;\n                    font-weight: bold;\n                    border: 2px solid black;\"\u003e\n                    42\n                \u003c/div\u003e",
+  "className": "empty",
+});
+            marker_062b719a91b92b46d368ec2d21f888da.setIcon(div_icon_7af779ca8920da16eac16ed77cd916a4);
+        
+    
+        var popup_3612d74d51bce5ef3e1869a53548756d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43992efc56bf1ee6c7219869e324c3a1 = $(`<div id="html_43992efc56bf1ee6c7219869e324c3a1" style="width: 100.0%; height: 100.0%;">Papenburg: Durchschnittsalter 42.2 Jahre</div>`)[0];
+                popup_3612d74d51bce5ef3e1869a53548756d.setContent(html_43992efc56bf1ee6c7219869e324c3a1);
+            
+        
+
+        marker_062b719a91b92b46d368ec2d21f888da.bindPopup(popup_3612d74d51bce5ef3e1869a53548756d)
+        ;
+
+        
+    
+    
+            marker_062b719a91b92b46d368ec2d21f888da.bindTooltip(
+                `<div>
+                     Papenburg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_062b719a91b92b46d368ec2d21f888da.setIcon(div_icon_7af779ca8920da16eac16ed77cd916a4);
+            
+    
+            var marker_f35faaca315ad5df104ccfa2f61ab88c = L.marker(
+                [54.0886707, 12.1400211],
+                {
+}
+            ).addTo(marker_cluster_4cc31ae82380525d77997575f935abc6);
+        
+    
+            var div_icon_2739f74c39845a146519cf67a0b07c22 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: lightblue;\n                    color: white;\n                    border-radius: 50%;\n                    width: 30px;\n                    height: 30px;\n                    text-align: center;\n                    line-height: 30px;\n                    font-weight: bold;\n                    border: 2px solid black;\"\u003e\n                    43\n                \u003c/div\u003e",
+  "className": "empty",
+});
+            marker_f35faaca315ad5df104ccfa2f61ab88c.setIcon(div_icon_2739f74c39845a146519cf67a0b07c22);
+        
+    
+        var popup_3200c251c0ac00ae71e884c51cb83160 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_380df56519d44205394e43723027d1d9 = $(`<div id="html_380df56519d44205394e43723027d1d9" style="width: 100.0%; height: 100.0%;">Rostock: Durchschnittsalter 43.4 Jahre</div>`)[0];
+                popup_3200c251c0ac00ae71e884c51cb83160.setContent(html_380df56519d44205394e43723027d1d9);
+            
+        
+
+        marker_f35faaca315ad5df104ccfa2f61ab88c.bindPopup(popup_3200c251c0ac00ae71e884c51cb83160)
+        ;
+
+        
+    
+    
+            marker_f35faaca315ad5df104ccfa2f61ab88c.bindTooltip(
+                `<div>
+                     Rostock
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f35faaca315ad5df104ccfa2f61ab88c.setIcon(div_icon_2739f74c39845a146519cf67a0b07c22);
+            
+    
+            var marker_52a7b665a839bb86197531dc2b8f0446 = L.marker(
+                [54.3096314, 13.0820846],
+                {
+}
+            ).addTo(marker_cluster_4cc31ae82380525d77997575f935abc6);
+        
+    
+            var div_icon_abb79f5e8ed527d8f62c556a157ed997 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: lightblue;\n                    color: white;\n                    border-radius: 50%;\n                    width: 30px;\n                    height: 30px;\n                    text-align: center;\n                    line-height: 30px;\n                    font-weight: bold;\n                    border: 2px solid black;\"\u003e\n                    42\n                \u003c/div\u003e",
+  "className": "empty",
+});
+            marker_52a7b665a839bb86197531dc2b8f0446.setIcon(div_icon_abb79f5e8ed527d8f62c556a157ed997);
+        
+    
+        var popup_38491c1519733efdf02076710a47cdaf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_415b73a82e368038a199fccdbe27dee4 = $(`<div id="html_415b73a82e368038a199fccdbe27dee4" style="width: 100.0%; height: 100.0%;">Stralsund: Durchschnittsalter 42.1 Jahre</div>`)[0];
+                popup_38491c1519733efdf02076710a47cdaf.setContent(html_415b73a82e368038a199fccdbe27dee4);
+            
+        
+
+        marker_52a7b665a839bb86197531dc2b8f0446.bindPopup(popup_38491c1519733efdf02076710a47cdaf)
+        ;
+
+        
+    
+    
+            marker_52a7b665a839bb86197531dc2b8f0446.bindTooltip(
+                `<div>
+                     Stralsund
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_52a7b665a839bb86197531dc2b8f0446.setIcon(div_icon_abb79f5e8ed527d8f62c556a157ed997);
+            
+    
+            var marker_63d1e6b68de2d16318585305ed5b7d63 = L.marker(
+                [54.1779039, 12.0812875],
+                {
+}
+            ).addTo(marker_cluster_4cc31ae82380525d77997575f935abc6);
+        
+    
+            var div_icon_529f1a4e12a630596f3fb64efc6f395c = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: lightblue;\n                    color: white;\n                    border-radius: 50%;\n                    width: 30px;\n                    height: 30px;\n                    text-align: center;\n                    line-height: 30px;\n                    font-weight: bold;\n                    border: 2px solid black;\"\u003e\n                    44\n                \u003c/div\u003e",
+  "className": "empty",
+});
+            marker_63d1e6b68de2d16318585305ed5b7d63.setIcon(div_icon_529f1a4e12a630596f3fb64efc6f395c);
+        
+    
+        var popup_cdf69450e423543622b86fb0e8a91d37 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6c7c13c8ad480e8949af2e922744004 = $(`<div id="html_e6c7c13c8ad480e8949af2e922744004" style="width: 100.0%; height: 100.0%;">Warnemünde: Durchschnittsalter 43.5 Jahre</div>`)[0];
+                popup_cdf69450e423543622b86fb0e8a91d37.setContent(html_e6c7c13c8ad480e8949af2e922744004);
+            
+        
+
+        marker_63d1e6b68de2d16318585305ed5b7d63.bindPopup(popup_cdf69450e423543622b86fb0e8a91d37)
+        ;
+
+        
+    
+    
+            marker_63d1e6b68de2d16318585305ed5b7d63.bindTooltip(
+                `<div>
+                     Warnemünde
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_63d1e6b68de2d16318585305ed5b7d63.setIcon(div_icon_529f1a4e12a630596f3fb64efc6f395c);
+            
+    
+            var marker_1e356038962c64d31facaf987235d09b = L.marker(
+                [53.5278793, 8.106301],
+                {
+}
+            ).addTo(marker_cluster_4cc31ae82380525d77997575f935abc6);
+        
+    
+            var div_icon_b7939add2bc3c608895c71a8247d8ee8 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: lightblue;\n                    color: white;\n                    border-radius: 50%;\n                    width: 30px;\n                    height: 30px;\n                    text-align: center;\n                    line-height: 30px;\n                    font-weight: bold;\n                    border: 2px solid black;\"\u003e\n                    42\n                \u003c/div\u003e",
+  "className": "empty",
+});
+            marker_1e356038962c64d31facaf987235d09b.setIcon(div_icon_b7939add2bc3c608895c71a8247d8ee8);
+        
+    
+        var popup_53203d4d2c0b6bbb5ea95de87e0cb9e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99b5ec2bd3ae9fb1404f70caf64a0399 = $(`<div id="html_99b5ec2bd3ae9fb1404f70caf64a0399" style="width: 100.0%; height: 100.0%;">Wilhelmshaven: Durchschnittsalter 42.0 Jahre</div>`)[0];
+                popup_53203d4d2c0b6bbb5ea95de87e0cb9e4.setContent(html_99b5ec2bd3ae9fb1404f70caf64a0399);
+            
+        
+
+        marker_1e356038962c64d31facaf987235d09b.bindPopup(popup_53203d4d2c0b6bbb5ea95de87e0cb9e4)
+        ;
+
+        
+    
+    
+            marker_1e356038962c64d31facaf987235d09b.bindTooltip(
+                `<div>
+                     Wilhelmshaven
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1e356038962c64d31facaf987235d09b.setIcon(div_icon_b7939add2bc3c608895c71a8247d8ee8);
+            
+    
+            var marker_c5716e05af5d417b0a048a1891eaf02c = L.marker(
+                [53.8909832, 11.4647932],
+                {
+}
+            ).addTo(marker_cluster_4cc31ae82380525d77997575f935abc6);
+        
+    
+            var div_icon_4fc733d2c740c155ebe0923f9a7e916e = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: lightblue;\n                    color: white;\n                    border-radius: 50%;\n                    width: 30px;\n                    height: 30px;\n                    text-align: center;\n                    line-height: 30px;\n                    font-weight: bold;\n                    border: 2px solid black;\"\u003e\n                    45\n                \u003c/div\u003e",
+  "className": "empty",
+});
+            marker_c5716e05af5d417b0a048a1891eaf02c.setIcon(div_icon_4fc733d2c740c155ebe0923f9a7e916e);
+        
+    
+        var popup_eede20059448a24141f488d321818365 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a81bf259152da15e6cfad82872486f00 = $(`<div id="html_a81bf259152da15e6cfad82872486f00" style="width: 100.0%; height: 100.0%;">Wismar: Durchschnittsalter 45.1 Jahre</div>`)[0];
+                popup_eede20059448a24141f488d321818365.setContent(html_a81bf259152da15e6cfad82872486f00);
+            
+        
+
+        marker_c5716e05af5d417b0a048a1891eaf02c.bindPopup(popup_eede20059448a24141f488d321818365)
+        ;
+
+        
+    
+    
+            marker_c5716e05af5d417b0a048a1891eaf02c.bindTooltip(
+                `<div>
+                     Wismar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c5716e05af5d417b0a048a1891eaf02c.setIcon(div_icon_4fc733d2c740c155ebe0923f9a7e916e);
+            
+    
+            marker_cluster_4cc31ae82380525d77997575f935abc6.addTo(map_50f605bf2d35105b4eb844d894ad5268);
+        
+</script>
+</html>
